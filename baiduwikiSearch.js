@@ -12,7 +12,7 @@ export class baidu extends plugin {
       rule: [
         /** 命令正则匹配 */
         {
-          reg: "^#搜索(.*)$",  //匹配消息正则，命令正则
+          reg: "^#百科(.*)$",  //匹配消息正则，命令正则
           fnc: "baiDuSearch" //【命令】功能说明
         }
       ]
