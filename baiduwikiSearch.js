@@ -40,7 +40,7 @@ export class baidu extends plugin {
     });
 
     const page = await browser.newPage();
-    await page.goto(`https://baike.baidu.com/item/${encodeURI(e.msg.split("搜索")[1])}?fromModule=lemma_search-box`)
+    await page.goto(`https://ovooa.com/API/bdbk/?Msg=${encodeURI(e.msg.split("搜索")[1])}?fromModule=lemma_search-box`)
 
 
     try {
