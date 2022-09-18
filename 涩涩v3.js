@@ -131,7 +131,7 @@ export class r18ss extends plugin {
                     delete CD[e.user_id];
                 }
             }, 10000);//这里是冷却时间，单位毫秒.
-            e.reply(`派蒙正在搜图，等一下哦`);
+            e.reply(`纳西妲正在搜图，等一下哦`);
             let keyword = e.msg.replace("#", "");
             keyword = keyword.replace("搜索", "");
             let url = '';
