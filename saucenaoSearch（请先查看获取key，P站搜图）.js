@@ -26,7 +26,7 @@ export async function soutu(e) {
       return false;
     }
     try {
-        let api_key = '5839310555f97ed2cdca6d97dd869d6db57d5225'
+        let api_key = '6885925ed7b1fc3100880cb9985737b187d0e32f'
         //自行去https://saucenao.com/user.php注册账号，然后在https://saucenao.com/user.php?page=search-api找到属于你的api key，填到引号里
         let imgURL = e.img[0];
         let url
