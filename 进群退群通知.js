@@ -14,7 +14,7 @@ export class newcomer extends plugin {
   /** 接受到消息都会执行一次 */
   async accept () {
     /** 定义入群欢迎内容 */
-    let msg = '欢迎新人！'
+    let msg = '欢迎大佬加入！我是纳西妲，一个原神机器人，如需查看使用方法，可以发送“帮助”哦，纳西妲很喜欢你呢！'
     /** 冷却cd 30s */
     let cd = 30
 
