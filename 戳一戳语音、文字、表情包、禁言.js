@@ -80,7 +80,7 @@ async chuoyichuo (e){
         else if (random == standard - 1){
             e.reply('说了不要戳了！')
             await common.sleep(1000)
-            await e.group.muteMember(e.operator_id,60);
+            await e.group.muteMember(e.operator_id,600);
             await common.sleep(3000)
             e.reply('啧')
         }
@@ -100,7 +100,7 @@ async chuoyichuo (e){
             await common.sleep(500);
             e.reply('戳！！')
             await common.sleep(1000);
-            await e.group.muteMember(e.operator_id,60)
+            await e.group.muteMember(e.operator_id,600)
         }
         
         //生成特定表情包并返回
