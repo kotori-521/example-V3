@@ -77,7 +77,7 @@ export class more_js extends plugin {
   //e.msg 用户的命令消息
   console.log("用户命令：", e.msg);
   //执行的逻辑功能
-  let url = `https://api.vvhan.com/api/moyu`;
+  let url = `http://api.gt5.cc/api/myr`;
   
   let msg = [ 
     segment.at(e.user_id),  
