@@ -27,7 +27,10 @@ export class more_js extends plugin {
           reg: "^#?(摸鱼日历)$",
           fnc: 'calendar'
         },
-  	   {
+	  reg: "^#?(人间)$",
+          fnc: 'rj'
+        },
+  	{
           reg: '^#*(.*)天气$',
           fnc: 'Tianqi'
         },      
@@ -98,5 +101,24 @@ export class more_js extends plugin {
      e.reply(`${res.content.replace(/{br}/g,'\n')}`,true)//发送引用消息（content节替换所有{br}为换行）
 	 return true;
 }
+ async rj (e) {
+        /** e.msg 用户的命令消息 */
+        logger.info('[用户命令]', e.msg)
+        let url = 'https://api.gt5.cc/api/rj'
+        /** 调用接口获取数据 */
+        let res = await fetch(url).catch((err) => logger.error(err))
+    
+        /** 判断接口是否请求成功 */
+        if (!res) {
+          logger.error('[人间凑数] 接口请求失败')
+          return await this.reply('人间凑数接口请求失败')
+        }
 
+        res = await res.text()
+        /** 输入日志 */
+        logger.info(`[接口结果] 人间凑数：${res}`)
+    
+        /** 最后回复消息 */
+        await this.reply(`${res}`)
+    }
 }
