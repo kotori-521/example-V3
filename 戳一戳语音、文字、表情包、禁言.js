@@ -78,7 +78,7 @@ async chuoyichuo (e){
         
         //禁言1分钟，需要给机器人管理员才能生效
         else if (random == standard - 1){
-            e.reply('说了不要戳了！')
+            e.reply('警察蜀黍，就是他干的！！！')
             await common.sleep(1000)
             await e.group.muteMember(e.operator_id,7200);
             await common.sleep(3000)
@@ -94,11 +94,11 @@ async chuoyichuo (e){
         
         //禁言1分钟，需要给机器人管理员才能生效
         else if(random===standard-3){
-            e.reply('不！！')
+            e.reply('hentai！！！')
             await common.sleep(500);
-            e.reply('准！！')
+            e.reply('不要啦！！！')
             await common.sleep(500);
-            e.reply('戳！！')
+            e.reply('警察蜀黍就是他干的！！！')
             await common.sleep(1000);
             await e.group.muteMember(e.operator_id,7200)
         }
