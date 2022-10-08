@@ -31,10 +31,6 @@ export class more_js extends plugin {
           reg: '^#*(.*)天气$',
           fnc: 'Tianqi'
         },      
-          {
-          reg: '^#?(每日手机壁纸|手机壁纸)',
-          fnc: 'phonewallpaper'
-	},
       ]
     })
 
@@ -47,7 +43,7 @@ export class more_js extends plugin {
   //e.msg 用户的命令消息
   console.log("用户命令：", e.msg);
   //执行的逻辑功能
-  let url = `https://api.yimian.xyz/img`;
+  let url = `https://api.oick.cn/random/api.php?type=pc`;
   
   let msg = [ 
     segment.at(e.user_id),  
@@ -64,7 +60,7 @@ export class more_js extends plugin {
   //e.msg 用户的命令消息
   console.log("用户命令：", e.msg);
   //执行的逻辑功能
-  let url = `https://api.ghser.com/random/api.php`;
+  let url = `https://api.vvhan.com/api/avatar`;
   
   let msg = [ 
     segment.at(e.user_id),  
@@ -82,23 +78,6 @@ export class more_js extends plugin {
   console.log("用户命令：", e.msg);
   //执行的逻辑功能
   let url = `http://api.gt5.cc/api/myr`;
-  
-  let msg = [ 
-    segment.at(e.user_id),  
-    segment.image(url),
-  ];
-    
-  //发送消息
-  e.reply(msg);
-  
-  return true; //返回true 阻挡消息不再往下
-}
-	
- async  phonewallpaper(e) {
-  //e.msg 用户的命令消息
-  console.log("用户命令：", e.msg);
-  //执行的逻辑功能
-  let url = `https://tuapi.eees.cc/api.php?category=dongman&px=m&type=302`;
   
   let msg = [ 
     segment.at(e.user_id),  
