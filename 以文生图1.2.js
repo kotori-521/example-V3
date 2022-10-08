@@ -18,8 +18,8 @@ https://wenxin.baidu.com/moduleApi/key //创建API KEY
 const client_id = '7xqtSox2ZfLN53AVg2yWTxt0I0gkPXKC'   //应用的API Key(AK)
 const client_secret ='wWOTUrEkeKiI1Z3y08hZdNnbugzZ0KWy' //应用的Secret Key(SK)
 const size = 3 //图片尺寸，1为方图1024*1024 ，2为长图1024*1536 ， 3为横图1536*1024
-const forword = true //是否发多张图片并制作合并转发,false为发一张,true为发多张
-const time = 7 //设置发送时间，单位：分钟，建议5分钟以上，避免图片没生成完从而发图失败
+const forword = flase //是否发多张图片并制作合并转发,false为发一张,true为发多张
+const time = 1 //设置发送时间，单位：分钟，建议5分钟以上，避免图片没生成完从而发图失败
 
 export class text_Painting extends plugin {
   constructor () {
