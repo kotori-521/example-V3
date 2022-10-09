@@ -14,7 +14,7 @@ const _path = process.cwd();
 let timeout = 10000; //这里是撤回时间，单位毫秒，1000=1秒,0则为不撤回
 let CD = {};// 命令CD
 let isR18 = false;//群聊R18默认值
-let isR18s = false;//私聊R18默认值
+let isR18s = true;//私聊R18默认值
 let interval = 10000;//连发模式的间隔时间，默认为10秒，由于图片质量不同导致发送时间不同，实际间隔可能有误差
 let num = 3; //默认连发数量为3
 
