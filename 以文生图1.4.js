@@ -16,8 +16,8 @@ https://wenxin.baidu.com/moduleApi/key //创建API KEY
 */
 
 
-const client_id = '' //应用的API Key(AK)
-const client_secret = '' //应用的Secret Key(SK)
+const client_id = 'H3vtyj2OdI2GiqT4oRAuD5rdsAkF5bKL' //应用的API Key(AK)
+const client_secret = 'BZpdKnrMkjOMxK0nm9AfxadboNiLR7i1' //应用的Secret Key(SK)
 const size = 3 //图片尺寸，1为方图1024*1024 ，2为长图1024*1536 ， 3为横图1536*1024
 const forword = true //是否发多张图片并制作合并转发,false为发一张,true为发多张,私聊只支持发单张
 const time = 10 //指令CD，默认十分钟，不建议改动，图片发完自动解除CD
