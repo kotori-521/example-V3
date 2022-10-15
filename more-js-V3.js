@@ -60,7 +60,7 @@ export class more_js extends plugin {
   //e.msg 用户的命令消息
   console.log("用户命令：", e.msg);
   //执行的逻辑功能
-  let url = `https://api.vvhan.com/api/avatar`;
+  let url = `https://api.uomg.com/api/rand.avatar?sort=动漫女&format=image`;
   
   let msg = [ 
     segment.at(e.user_id),  
