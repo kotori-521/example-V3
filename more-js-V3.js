@@ -61,7 +61,8 @@ export class more_js extends plugin {
   console.log("用户命令：", e.msg);
   //执行的逻辑功能
   let url = `https://api.uomg.com/api/rand.avatar?sort=动漫女&format=image`;
- let res = await fetch(url).catch((err) => logger.error(err));
+
+	 let res = await fetch(url).catch((err) => logger.error(err));
         
         let msg = [segment.at(e.user_id), segment.image(res.url)];
   //发送消息
