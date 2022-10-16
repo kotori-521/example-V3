@@ -107,7 +107,7 @@ export class outNotice extends plugin {
     })
 
     /** 退群提示词 */
-    this.tips = '永远离开了我们。。'
+    this.tips = '以成功进入二次元世界，离开了我们！'
   }
 
   async accept() {
